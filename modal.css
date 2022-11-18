@@ -41,6 +41,32 @@
   .modal.modal-static & {
     transform: $modal-scale-transform;
   } */
+  
+  .modal.fade {
+    transition: opacity .15s linear;
+    opacity: 1;
+   
+  }
+ 
+    
+ /* transform: translate3d(0vw, 0vh, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transition: opacity .15s linear;
+  .fade {
+  opacity: 0;
+  @include transition($transition-fade);
+
+  &.show {
+    opacity: 1;
+  } 
+  .modal.fade & {
+    @include transition($modal-transition);
+    transform: translate(0, -25%);
+  }
+  .modal.show & {
+    transform: translate(0, 0);
+  }
+}
+  */
 
 .modal-dialog-scrollable {
   height: 90%;
