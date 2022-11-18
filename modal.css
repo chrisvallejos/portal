@@ -1,4 +1,4 @@
-
+<style>
 .modal-open {
   overflow: hidden;
   background-color: red;
@@ -50,4 +50,4 @@
   .modal-body {
     overflow-y: auto;
   }
-
+</style>
