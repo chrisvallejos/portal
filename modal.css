@@ -1,10 +1,27 @@
 
+
+@media screen and (min-width: 992px) { 
+  .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1076
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  outline: 0;
+  }
+}
+  
+@media screen and (max-width: 991px) {
 .modal-open {
   overflow: hidden;
   background-color: red;
 }
-
-.modal {
+  
+  .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,4 +66,4 @@
   .modal-body {
     overflow-y: auto;
   }
-
+  }
