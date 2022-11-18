@@ -41,12 +41,13 @@
   .modal.modal-static & {
     transform: $modal-scale-transform;
   } */
+  /*
   
   .modal.fade {
     transition: opacity .15s linear;
     opacity: 1;
    
-  }
+  } */
  
     
  /* transform: translate3d(0vw, 0vh, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
