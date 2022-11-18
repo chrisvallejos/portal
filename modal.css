@@ -22,8 +22,8 @@
   width: auto;
   margin: 0;
   pointer-events: none;
-
-  /* When fading in the modal, animate it to slide down
+}
+ /* When fading in the modal, animate it to slide down
   .modal.fade & {
     @include transition($modal-transition);
     transform: $modal-fade-transform;
@@ -36,7 +36,6 @@
   .modal.modal-static & {
     transform: $modal-scale-transform;
   } */
-}
 
 .modal-dialog-scrollable {
   height: 90%;
