@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1076
+  z-index: 1076;
   display: block;
   width: 100%;
   height: auto;
@@ -20,6 +20,10 @@
   overflow: hidden;
   background-color: red;
 }
+  
+ .nav__menu-flex {
+   overflow-y: auto;
+  }
   
   .modal {
   position: fixed;
