@@ -9,8 +9,8 @@
   display: block;
   width: 100%;
   height: auto;
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow-x: visible;
+  overflow-y: visible;
   outline: 0;
   }
 }
@@ -38,7 +38,7 @@
   position: relative;
   width: auto;
   margin: 0;
-  pointer-events: none;
+  pointer-events: auto;
 }
  /* When fading in the modal, animate it to slide down
   .modal.fade & {
