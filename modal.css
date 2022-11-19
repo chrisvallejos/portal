@@ -80,7 +80,9 @@ These are work in progress styels */
   overflow-y: auto;
 }
 
-
+.modal {
+ /* modal styles at bottom */
+}
 
 
 
@@ -120,6 +122,8 @@ These are work in progress styels */
                   
 
 These are styles from orginal file*/
+/*
+
 .modal {
   --bs-modal-zindex: 1055;
   --bs-modal-width: 500px;
@@ -411,7 +415,7 @@ These are styles from orginal file*/
   .modal-fullscreen-xxl-down .modal-body {
     overflow-y: auto;
   }
-}
+} */
 
 /* end og modal styles
 
