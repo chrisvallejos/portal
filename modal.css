@@ -201,7 +201,6 @@ opacity: 1;
   .modal {
     height:100%; 
     opacity: 1;
-    background-color: pink;
     transition: .1s all ease-in ;
     }
   .modal.fade.show {
