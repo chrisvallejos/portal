@@ -20,31 +20,34 @@ _____________|','   ///_/-------------/   |
               |===========,'
 These are work in progress styels */
 .fade {
-  transition: transform .5s ease-out; 
-  transition: opacity .2s ease-out;
+  transition: opacity .5s ease-out;
+  opacity: .5;
  }
    /* .modal.fade .modal-dialog {
     transition: transform 2s ease-out;
     transform: translate(0,500px);
 } */
+
+.show {
+  opacity: 1;
+}
 .modal.fade .modal-dialog {
-    transition: transform .5s ease-out;
-    transform: translate(0,1px);
+ transition: opacity .5s ease-out;
+  opacity: .5;
 }
 .modal.show .modal-dialog {
-    transform: none;
+    opacity: 1;
 }
 
   .modal.fade {
-     transform: translate(0, 0);
-    opacity: 1;
+ transition: opacity .5s ease-out;
+  opacity: .5;
   }
   .modal.show {
-      transform: translate(0, 0);
     opacity: 1;
   }
 .fade:not(.show) {
-    opacity: 1;
+    opacity: .5;
 }
 
 .modal-backdrop.fade.show {
@@ -58,7 +61,7 @@ These are work in progress styels */
 
 
 .modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop  {
-    transition: 0s;
+    transition: .3s;
 }
 
  
@@ -99,7 +102,7 @@ These are work in progress styels */
   }
 }
 .modal.show .modal-dialog {
-  transform: none;
+opacity: 1;
 }
 
 /*
