@@ -19,6 +19,16 @@ _____________,'      ,',_____|      |    | |
 _____________|','   ///_/-------------/   |
               |===========,'
 These are work in progress styels */
+.fade {
+  transition: .7s;
+ }
+   /* .modal.fade .modal-dialog {
+    transition: transform 2s ease-out;
+    transform: translate(0,500px);
+} */
+.modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop,  {
+    transition: 0s;
+}
 
 
 
