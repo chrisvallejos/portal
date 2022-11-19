@@ -46,7 +46,7 @@ These are work in progress styels */
   display:hidden; 
 } */
 
-.modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop,  {
+.modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop  {
     transition: 0s;
 }
 
