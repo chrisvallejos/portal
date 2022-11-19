@@ -30,15 +30,21 @@ These are work in progress styels */
 
   .modal.fade {
      transform: translate(0, 0);
-    opacity: 0;
+    opacity: ;
   }
   .modal.show {
       transform: translate(0, 0);
     opacity: 1;
   }
 
-  
+.modal-backdrop.fade.show {
+  display:hidden;
 }
+
+div .modal-backdrop.fade.show {
+  display:hidden; 
+}
+
 .modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop,  {
     transition: 0s;
 }
@@ -62,12 +68,13 @@ These are work in progress styels */
   overflow-y: auto;
 }
 
-.modal-dialog { /* this is tested and good */
+.modal-dialog {
   position: relative;
   width: auto;
   margin: 0;
   pointer-events: auto;
 }
+
 /*
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -82,32 +89,8 @@ These are work in progress styels */
 .modal.show .modal-dialog {
   transform: none;
 }
-/*.modal.modal-static .modal-dialog {
-  transform: scale(1.02);
-}
 
-.modal-dialog-scrollable {
-  height: calc(100% - var(--bs-modal-margin) * 2);
-}
-
-}
-.modal-dialog-scrollable .modal-body {
-  overflow-y: auto;
-}
-
-.modal {
- /* modal styles at bottom */
-}
-
-*/
-
-
-/* end work in progress styles */
-
-
-/* all the original bootsrap modal styles */
 /*
-
 
                                                .--.
                                                `.  \
