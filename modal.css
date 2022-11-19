@@ -193,6 +193,45 @@ opacity: 1;
   outline: 0;
   }
 }
+/* styles added later */
+/*.fade:not(.modal-backdrop) {
+   opacity: 1; 
+   transition: .1s;
+   } */
+  .modal {
+    height:100%; 
+    opacity: 1;
+    background-color: pink;
+    transition: .1s all ease-in ;
+    }
+  .modal.fade.show {
+     height: 100%; 
+     opacity: 1;           
+     transition: 1s all ease-in;
+     }
+  .modal-backdrop {
+		opacity:.5; width: 300px;
+    transition: 0s all ease-in; 
+    background-color: blue;
+     }
+  .modal-backdrop.fade.show {
+		opacity: 0;
+    transition: 0s all ease-in;
+     }
+     
+   .fade:not(.modal-backdrop) {
+    opacity: 1;
+    height: 100%;
+    transition: 2s all linear .1s;
+    }
+    div.modal-backdrop.fade {
+		transition: .05s all ease-in 0 !important; 
+}
+    .fade {
+    transition: 1s all;
+}
+
+
 
 /*
 
