@@ -82,7 +82,7 @@ These are work in progress styels */
 .modal.show .modal-dialog {
   transform: none;
 }
-.modal.modal-static .modal-dialog {
+/*.modal.modal-static .modal-dialog {
   transform: scale(1.02);
 }
 
@@ -99,6 +99,7 @@ These are work in progress styels */
  /* modal styles at bottom */
 }
 
+*/
 
 
 /* end work in progress styles */
@@ -134,9 +135,173 @@ These are work in progress styels */
           \_,'     _.'   /              /''     _,-'            _|   |
                   '     /               `-----''               /     |
                   `...-'     dp                                `...-'
-                  
+                */  
 
-These are styles from orginal file*/
+
+@media screen and (max-width: 991px) {
+.modal-open {
+  overflow: hidden;
+}
+  
+ .nav__menu-flex {
+   overflow-y: auto;
+  }
+  
+  .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1076;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.modal-dialog-scrollable {
+  height: 90%;
+}
+
+  .modal-content {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .modal-body {
+    overflow-y: auto;
+  }
+  }
+
+@media screen and (min-width: 992px) { 
+  .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1076;
+  display: block !important;
+  width: 100%;
+  height: auto;
+  overflow-x: visible;
+  overflow-y: visible;
+  outline: 0;
+  }
+}
+
+/*
+
+                             \\\\\\\
+                            \\\\\\\\\\\\
+                          \\\\\\\\\\\\\\\
+  -----------,-|           |C>   // )\\\\|
+           ,','|          /    || ,'/////|
+---------,','  |         (,    ||   /////
+         ||    |          \\  ||||//''''|
+         ||    |           |||||||     _|
+         ||    |______      `````\____/ \
+         ||    |     ,|         _/_____/ \
+         ||  ,'    ,' |        /          |
+         ||,'    ,'   |       |         \  |
+_________|/    ,'     |      /           | |
+_____________,'      ,',_____|      |    | |
+             |     ,','      |      |    | |
+             |   ,','    ____|_____/    /  |
+             | ,','  __/ |             /   |
+_____________|','   ///_/-------------/   |
+              |===========,'
+
+                      _____
+                              _.--""     ""--._
+                          _.-"                 "-._
+                        .F                         Y.
+                      .F                             Y.
+                     /   ..___                 ___..   \
+                    F   /   | """""-------""""" |   \   Q
+                   F   F    (.-"""-.     .-"""-.)    Q   Q
+                  F   F    .'       `. .'       `.    Q   Q
+                 J   F    /|    o    | |    o    |\    Q   L
+                 |  J     .`.       .' `.       .'.     L  |
+                 |  F    ( " `-...-'(   )'-...-' " )    Q  |
+                 | |      `.    _.-' '-' `-._    .'      | |
+                 Y |        L .'             `. J        | J
+                  L|        Q'                 `F        |J
+                   Q        |                   |        J
+                    L       C                   D       J
+                     \      \  ---...____..---  /     _/
+                      `L .-' `.               .' `-. P
+                       |`L   (|`-.__     __.-'|)   J'|__
+                       |  `-._`-..__"""""__..-'_.-'  |  """..
+           _..--""-..-' `.    `-..__"""""__..-"    .'\       `-.
+        .-"         L     `-._      """""      _.-'   L  *****:::.
+      ."            |         ""--.........--""        Q  *****...L
+     /"""""--..     F    .-""-.      |\ \               L  ::::::::L
+    J  ("  /| J    J   .' _/\_ `.    |_\ \              |   L____...L
+    F ._) /"| F    |   |  >..<  |    | |\.'             |            Q
+   J-----..._J     F   `.==..==.'    |_|                Q             L
+   F              J      '-..-'      | |                `.             Q
+  J               F                  |_|                  Q             Q
+ /               J                   | |                   L             L
+ F           __ J                    |_|                    Q            Q
+J           `._\|                    | |                     L            L
+F              ""L      .-""-.       |_|       .-""-.         L           Q
+Q                |    .'  ..  `.     | |     .'  ..  `.       |.__   __..::
+ L               |    |  (  )  |     |_|     |  (  )  |       |':::::::''' |
+ Q               Q    `.  ''  .'     | |     `.  ''  .'       |            |
+  L               L     `-..-'       |_|       `-..-'         J.-.         |
+   Q            _..Q                                         J'  J   .  |  J
+    L   __....:::'' \                                        F  J   J  J._J
+     L::::''''       Q                                      J  (  _J._,"
+      L               `.                                    Q_  `"
+      |          ."`.   )                           __...--"" \
+      |          Q   "-'                          .'\          L
+      Q   L  L    L                              <   Q       ___Q
+       L  Q   Q    `.            ""bmw--""        \   L--""""    L
+        '_.`.  `.    )            J     Q          Q  Q           |
+         J   `-' `-.'.._         |       L          L  L          Q
+         F            F `.       F       |          Q  |           L
+        L""""""--..._|   F      J        Q           L  Q   ___..--'
+        |           F   |       |         L          '---"""       |
+        |           |  J        F          L                       Q
+        |           |  |       |           Q                        L
+        ."""""---.._|  |     `.F            L                       |
+         `"""----.___`.|     ._)            Q                       Q
+          L          ""       )             |                        L
+          |                   Q             L                        L
+          Q                    L             |                       |
+           L                    L            |                      J
+            Q                   Q            F                      F
+             L                  .L          J                      J
+              Q             _..:' `.        |                      |
+               `.    ___...::''.   `.       |                      |
+                 `::::::'''    J    :       Q                      F
+                .' ___        J    .:        L                    J
+               J"""   "".._  .    .:'       .'::...___            |
+              J            '/    .:'       J  `.'''::::........:::'Q
+             F                 .::'        L    `.     ''''''''    'L
+             L               .::'          :.     L__   __..---..-' Q
+             :.            .::'            `:.       """             L
+              ':.._  _...::''               `::                      |
+                `':::::''                     ::.                    |
+                                                ::.                  |
+             (c) 02/01 by Benjamin M. Weiland     `::.              J
+                                                    `'::..__   __..:'
+                                                       `'::::::::''
+
+
+
+*/
+  
+
+
+/* These are styles from orginal file*/
 /*
 
 .modal {
@@ -432,203 +597,4 @@ These are styles from orginal file*/
   }
 } */
 
-/* end og modal styles
-
-                             \\\\\\\
-                            \\\\\\\\\\\\
-                          \\\\\\\\\\\\\\\
-  -----------,-|           |C>   // )\\\\|
-           ,','|          /    || ,'/////|
----------,','  |         (,    ||   /////
-         ||    |          \\  ||||//''''|
-         ||    |           |||||||     _|
-         ||    |______      `````\____/ \
-         ||    |     ,|         _/_____/ \
-         ||  ,'    ,' |        /          |
-         ||,'    ,'   |       |         \  |
-_________|/    ,'     |      /           | |
-_____________,'      ,',_____|      |    | |
-             |     ,','      |      |    | |
-             |   ,','    ____|_____/    /  |
-             | ,','  __/ |             /   |
-_____________|','   ///_/-------------/   |
-              |===========,'
-
-                      _____
-                              _.--""     ""--._
-                          _.-"                 "-._
-                        .F                         Y.
-                      .F                             Y.
-                     /   ..___                 ___..   \
-                    F   /   | """""-------""""" |   \   Q
-                   F   F    (.-"""-.     .-"""-.)    Q   Q
-                  F   F    .'       `. .'       `.    Q   Q
-                 J   F    /|    o    | |    o    |\    Q   L
-                 |  J     .`.       .' `.       .'.     L  |
-                 |  F    ( " `-...-'(   )'-...-' " )    Q  |
-                 | |      `.    _.-' '-' `-._    .'      | |
-                 Y |        L .'             `. J        | J
-                  L|        Q'                 `F        |J
-                   Q        |                   |        J
-                    L       C                   D       J
-                     \      \  ---...____..---  /     _/
-                      `L .-' `.               .' `-. P
-                       |`L   (|`-.__     __.-'|)   J'|__
-                       |  `-._`-..__"""""__..-'_.-'  |  """..
-           _..--""-..-' `.    `-..__"""""__..-"    .'\       `-.
-        .-"         L     `-._      """""      _.-'   L  *****:::.
-      ."            |         ""--.........--""        Q  *****...L
-     /"""""--..     F    .-""-.      |\ \               L  ::::::::L
-    J  ("  /| J    J   .' _/\_ `.    |_\ \              |   L____...L
-    F ._) /"| F    |   |  >..<  |    | |\.'             |            Q
-   J-----..._J     F   `.==..==.'    |_|                Q             L
-   F              J      '-..-'      | |                `.             Q
-  J               F                  |_|                  Q             Q
- /               J                   | |                   L             L
- F           __ J                    |_|                    Q            Q
-J           `._\|                    | |                     L            L
-F              ""L      .-""-.       |_|       .-""-.         L           Q
-Q                |    .'  ..  `.     | |     .'  ..  `.       |.__   __..::
- L               |    |  (  )  |     |_|     |  (  )  |       |':::::::''' |
- Q               Q    `.  ''  .'     | |     `.  ''  .'       |            |
-  L               L     `-..-'       |_|       `-..-'         J.-.         |
-   Q            _..Q                                         J'  J   .  |  J
-    L   __....:::'' \                                        F  J   J  J._J
-     L::::''''       Q                                      J  (  _J._,"
-      L               `.                                    Q_  `"
-      |          ."`.   )                           __...--"" \
-      |          Q   "-'                          .'\          L
-      Q   L  L    L                              <   Q       ___Q
-       L  Q   Q    `.            ""bmw--""        \   L--""""    L
-        '_.`.  `.    )            J     Q          Q  Q           |
-         J   `-' `-.'.._         |       L          L  L          Q
-         F            F `.       F       |          Q  |           L
-        L""""""--..._|   F      J        Q           L  Q   ___..--'
-        |           F   |       |         L          '---"""       |
-        |           |  J        F          L                       Q
-        |           |  |       |           Q                        L
-        ."""""---.._|  |     `.F            L                       |
-         `"""----.___`.|     ._)            Q                       Q
-          L          ""       )             |                        L
-          |                   Q             L                        L
-          Q                    L             |                       |
-           L                    L            |                      J
-            Q                   Q            F                      F
-             L                  .L          J                      J
-              Q             _..:' `.        |                      |
-               `.    ___...::''.   `.       |                      |
-                 `::::::'''    J    :       Q                      F
-                .' ___        J    .:        L                    J
-               J"""   "".._  .    .:'       .'::...___            |
-              J            '/    .:'       J  `.'''::::........:::'Q
-             F                 .::'        L    `.     ''''''''    'L
-             L               .::'          :.     L__   __..---..-' Q
-             :.            .::'            `:.       """             L
-              ':.._  _...::''               `::                      |
-                `':::::''                     ::.                    |
-                                                ::.                  |
-             (c) 02/01 by Benjamin M. Weiland     `::.              J
-                                                    `'::..__   __..:'
-                                                       `'::::::::''
-
-
-
-*/
-  
-@media screen and (max-width: 991px) {
-.modal-open {
-  overflow: hidden;
-}
-  
- .nav__menu-flex {
-   overflow-y: auto;
-  }
-  
-  .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1076;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  outline: 0;
-}
-
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0;
-  pointer-events: auto;
-}
- /* When fading in the modal, animate it to slide down
-  .modal.fade & {
-    @include transition($modal-transition);
-    transform: $modal-fade-transform;
-  } 
-  .modal.show & {
-    transform: $modal-show-transform;
-  } 
-
-  // When trying to close, animate focus to scale
-  .modal.modal-static & {
-    transform: $modal-scale-transform;
-  } */
-  /*
-  
-  .modal.fade {
-    transition: opacity .15s linear;
-    opacity: 1;
-   
-  } */
- 
-    
- /* transform: translate3d(0vw, 0vh, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transition: opacity .15s linear;
-  .fade {
-  opacity: 0;
-  @include transition($transition-fade);
-
-  &.show {
-    opacity: 1;
-  } 
-  .modal.fade & {
-    @include transition($modal-transition);
-    transform: translate(0, -25%);
-  }
-  .modal.show & {
-    transform: translate(0, 0);
-  }
-}
-  */
-
-.modal-dialog-scrollable {
-  height: 90%;
-}
-
-  .modal-content {
-    max-height: 100%;
-    overflow: hidden;
-  }
-
-  .modal-body {
-    overflow-y: auto;
-  }
-  }
-
-@media screen and (min-width: 992px) { 
-  .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1076;
-  display: block !important;
-  width: 100%;
-  height: auto;
-  overflow-x: visible;
-  overflow-y: visible;
-  outline: 0;
-  }
-}
+/* end og modal styles */
