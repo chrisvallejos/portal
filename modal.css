@@ -41,7 +41,7 @@ These are work in progress styels */
   display:hidden;
 }
 
-div .modal-backdrop.fade.show {
+div.modal-backdrop.fade.show {
   display:hidden; 
 }
 
