@@ -27,6 +27,13 @@ These are work in progress styels */
     transition: transform 2s ease-out;
     transform: translate(0,500px);
 } */
+.modal.fade .modal-dialog {
+    transition: transform .5s ease-out;
+    transform: translate(0,-50px);
+}
+.modal.show .modal-dialog {
+    transform: none;
+}
 
   .modal.fade {
      transform: translate(0, 0);
@@ -36,6 +43,9 @@ These are work in progress styels */
       transform: translate(0, 0);
     opacity: 1;
   }
+.fade:not(.show) {
+    opacity: 1;
+}
 
 .modal-backdrop.fade.show {
  /* display:hidden; */
@@ -45,6 +55,7 @@ These are work in progress styels */
 /* div.modal-backdrop.fade.show {
   display:hidden; 
 } */
+
 
 .modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop  {
     transition: 0s;
