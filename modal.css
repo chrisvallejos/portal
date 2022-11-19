@@ -38,12 +38,13 @@ These are work in progress styels */
   }
 
 .modal-backdrop.fade.show {
-  display:hidden;
+ /* display:hidden; */
+  z-index: -1000;
 }
 
-div.modal-backdrop.fade.show {
+/* div.modal-backdrop.fade.show {
   display:hidden; 
-}
+} */
 
 .modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop,  {
     transition: 0s;
@@ -51,17 +52,17 @@ div.modal-backdrop.fade.show {
 
  
   .modal-backdrop {
-    --bs-backdrop-zindex: 0;
+    --bs-backdrop-zindex: -1000;
     --bs-backdrop-bg: red;
     --bs-backdrop-opacity: 1;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1000;
     width: 100vw;
     height: 100vh;
     background-color: blue;
-    display: hidden;
+    display: block;
 }
 
 .modal-dialog-scrollable .modal-body {
