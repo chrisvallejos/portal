@@ -30,7 +30,7 @@ These are work in progress styels */
 
   .modal.fade {
      transform: translate(0, 0);
-    opacity: ;
+    opacity: 1;
   }
   .modal.show {
       transform: translate(0, 0);
