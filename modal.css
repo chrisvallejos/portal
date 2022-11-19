@@ -18,7 +18,7 @@ _____________,'      ,',_____|      |    | |
              | ,','  __/ |             /   |
 _____________|','   ///_/-------------/   |
               |===========,'
-These are work in progress styels */
+These are work in progress styles */
 .fade {
   transition: opacity .5s ease-out;
   opacity: .5;
