@@ -20,15 +20,66 @@ _____________|','   ///_/-------------/   |
               |===========,'
 These are work in progress styels */
 .fade {
-  transition: .7s;
+  transition: transform .5s ease-out; 
+  transition: opacity .2s ease-out;
  }
    /* .modal.fade .modal-dialog {
     transition: transform 2s ease-out;
     transform: translate(0,500px);
 } */
+
+  .modal.fade {
+     transform: translate(0, 0);
+    opacity: 0;
+  }
+  .modal.show {
+      transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  
+}
 .modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop,  {
     transition: 0s;
 }
+
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
+.modal-dialog { /* this is tested and good */
+  position: relative;
+  width: auto;
+  margin: 0;
+  pointer-events: auto;
+}
+/*
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+} */ /* make sure to update this one */
+
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  }
+}
+.modal.show .modal-dialog {
+  transform: none;
+}
+.modal.modal-static .modal-dialog {
+  transform: scale(1.02);
+}
+
+.modal-dialog-scrollable {
+  height: calc(100% - var(--bs-modal-margin) * 2);
+}
+
+}
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
 
 
 
