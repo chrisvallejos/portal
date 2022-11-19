@@ -46,9 +46,9 @@ These are work in progress styels */
   .modal.show {
     opacity: 1;
   }
-.fade:not(.show) {
+/* .fade:not(.show) {
     opacity: .5;
-}
+} */
 
 .modal-backdrop.fade.show {
  /* display:hidden; */
