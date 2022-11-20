@@ -76,9 +76,7 @@ These are work in progress styless */
     display: block;
 }
 
-.modal-dialog-scrollable .modal-body {
-  overflow-y: auto;
-}
+
 
 .modal-dialog {
   position: relative;
@@ -102,6 +100,9 @@ These are work in progress styless */
 opacity: 1;
 }
 
+.modal-dialog-scrollable, .modal-body {
+  overflow-y: auto;
+}
 /*
 
                                                .--.
