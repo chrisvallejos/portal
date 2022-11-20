@@ -221,7 +221,7 @@ opacity: 1;
    .fade:not(.modal-backdrop) {
     opacity: 1;
     height: 100%;
-    transition: 2s all linear .1s;
+    transition: .2s all ease-in .01s;
     }
     div.modal-backdrop.fade {
 		transition: .05s all ease-in 0 !important; 
