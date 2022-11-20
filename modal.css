@@ -225,9 +225,9 @@ opacity: 1;
      
   
 .fade:not(.modal-backdrop) {
-    opacity: .7;
+    opacity: 1;
     height: 0%;
-    transition: all .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: all .18s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
     div.modal-backdrop.fade {
