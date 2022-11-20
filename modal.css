@@ -100,9 +100,7 @@ These are work in progress stylesss */
 opacity: 1;
 }
 
-.modal-dialog-scrollable, .modal-body {
-  overflow-y: auto;
-}
+
 /*
 
                                                .--.
@@ -132,11 +130,14 @@ opacity: 1;
                   '     /               `-----''               /     |
                   `...-'     dp                                `...-'
                 */
-
+/* Mobile break points */
 
 @media screen and (max-width: 991px) {
 .modal-open {
   overflow: hidden;
+}
+.modal-dialog-scrollable, .modal-body {
+  overflow-y: auto;
 }
 
  .nav__menu-flex {
@@ -176,6 +177,8 @@ opacity: 1;
     overflow-y: auto;
   }
   }
+
+/* desktop break points */
 
 @media screen and (min-width: 992px) {
   .modal {
