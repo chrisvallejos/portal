@@ -33,7 +33,7 @@ These are work in progress styless */
 }
 .modal.fade .modal-dialog {
  transition: opacity .5s ease-out;
-  opacity: .5;
+  opacity: 1;
 }
 .modal.show .modal-dialog {
     opacity: 1;
