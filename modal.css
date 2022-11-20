@@ -20,7 +20,7 @@ _____________|','   ///_/-------------/   |
               |===========,'
 These are work in progress styless */
 .fade {
-  transition: opacity .5s ease-out;
+  transition: opacity .2s ease-out;
   opacity: .5;
  }
    /* .modal.fade .modal-dialog {
@@ -31,16 +31,13 @@ These are work in progress styless */
 .show {
   opacity: 1;
 }
-.modal.fade .modal-dialog {
- transition: opacity .5s ease-out;
-  opacity: 1;
-}
+
 .modal.show .modal-dialog {
     opacity: 1;
 }
 
   .modal.fade {
- transition: opacity .5s ease-out;
+ transition: opacity .1s ease-out;
   opacity: .5;
   }
   .modal.show {
@@ -61,7 +58,7 @@ These are work in progress styless */
 
 
 .modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop  {
-    transition: .3s;
+    transition: .1s;
 }
 
  
@@ -198,6 +195,10 @@ opacity: 1;
    opacity: 1; 
    transition: .1s;
    } */
+.modal.fade .modal-dialog {
+ transition: opacity .1s ease-out;
+  opacity: 1;
+}
   .modal {
     height:100%; 
     opacity: 1;
