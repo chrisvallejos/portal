@@ -1,4 +1,4 @@
-/* 
+/*
                              \\\\\\\
                             \\\\\\\\\\\\
                           \\\\\\\\\\\\\\\
@@ -18,7 +18,7 @@ _____________,'      ,',_____|      |    | |
              | ,','  __/ |             /   |
 _____________|','   ///_/-------------/   |
               |===========,'
-These are work in progress styless */
+These are work in progress stylesss */
 .fade {
   transition: opacity .2s ease-out;
   opacity: .5;
@@ -53,7 +53,7 @@ These are work in progress styless */
 }
 
 /* div.modal-backdrop.fade.show {
-  display:hidden; 
+  display:hidden;
 } */
 
 
@@ -61,7 +61,7 @@ These are work in progress styless */
     transition: .1s;
 }
 
- 
+
   .modal-backdrop {
     --bs-backdrop-zindex: -1000;
     --bs-backdrop-bg: red;
@@ -131,18 +131,18 @@ opacity: 1;
           \_,'     _.'   /              /''     _,-'            _|   |
                   '     /               `-----''               /     |
                   `...-'     dp                                `...-'
-                */  
+                */
 
 
 @media screen and (max-width: 991px) {
 .modal-open {
   overflow: hidden;
 }
-  
+
  .nav__menu-flex {
    overflow-y: auto;
   }
-  
+
   .modal {
   position: fixed;
   top: 0;
@@ -177,7 +177,7 @@ opacity: 1;
   }
   }
 
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
   .modal {
   position: fixed;
   top: 0;
@@ -193,7 +193,7 @@ opacity: 1;
 }
 /* styles added later */
 /*.fade:not(.modal-backdrop) {
-   opacity: 1; 
+   opacity: 1;
    transition: .1s;
    } */
 .modal.fade .modal-dialog {
@@ -201,30 +201,30 @@ opacity: 1;
   opacity: 1;
 }
   .modal {
-    height:100%; 
+    height:100%;
     opacity: 1;
     transition: .1s all ease-in ;
   }
 
-  
+
 .modal.fade.show {
     height: 100%;
     opacity: 1;
     transition: all .15s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   .modal-backdrop {
-    opacity: 0; 
+    opacity: 0;
 	width: 0px;
-    transition: all 0s ease-in; 
-    background-color: rgb(0 0 255 / 0%);   
+    transition: all 0s ease-in;
+    background-color: rgb(0 0 255 / 0%);
 }
 
   .modal-backdrop.fade.show {
    opacity: 0;
    transition: all 0s ease-in;
    }
-     
-  
+
+
 .fade:not(.modal-backdrop) {
     opacity: 1;
     height: 0%;
@@ -232,7 +232,7 @@ opacity: 1;
 }
 
     div.modal-backdrop.fade {
-    transition: all .05s ease-in 0 !important; 
+    transition: all .05s ease-in 0 !important;
    }
 
     .fade {
@@ -343,7 +343,7 @@ Q                |    .'  ..  `.     | |     .'  ..  `.       |.__   __..::
 
 
 */
-  
+
 
 
 /* These are styles from orginal file*/
