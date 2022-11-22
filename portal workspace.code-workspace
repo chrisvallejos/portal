@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../clean-slate-6b7175.webflow/clean-slate"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "clean-slate"
+	}
+}
