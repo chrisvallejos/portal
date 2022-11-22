@@ -1,6 +1,6 @@
 
-let mqs = window.matchMedia('(max-width: 991px)');
-document.querySelector(".mq-value").innerText = mqs.matches;
+// let mqs = window.matchMedia('(max-width: 991px)');
+// document.querySelector(".mq-value").innerText = mqs.matches;
 
 // Defining event listener function
 function displayWindowSize() {
