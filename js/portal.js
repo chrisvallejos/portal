@@ -96,32 +96,43 @@ mql.onchange = function () {
 //}
 
 
-const large = window.matchMedia('min-width: 992px');
-large.addEventListener(console.log);
+const large = window.matchMedia('(min-width: 992px)');
+large.addEventListener('change', console.log);
 
-large.addEventListener(alertMel);
+large.addEventListener('change', alertMel);
 function alertMel(e) {
     if (e.matches) {
-        document.body.style.backgroundColor = 'green', $('#modalMenu').modal('hide');
+        $('#modalMenu').modal('hide');
     }
 }
 
-const med = window.matchMedia('(min-width: 479px) and (max-width: 767px)');
-med.addEventListener(console.log);
+const med = window.matchMedia('(min-width: 768px) and (max-width: 991px)');
+med.addEventListener('change', console.log);
 
-med.addEventListener(alertMem);
+med.addEventListener('change', alertMem);
 function alertMem(f) {
     if (f.matches) {
-        document.body.style.backgroundColor = '#800071', $('#modalMenu').modal('hide');
+        $('#modalMenu').modal('hide');
     }
 }
 
-const sm = window.matchMedia('min-width: 478px');
-sm.addEventListener(console.log);
+const sm = window.matchMedia('(min-width: 480px) and (max-width: 767px)');
+sm.addEventListener('change', console.log);
 
-sm.addEventListener(alertMes);
+sm.addEventListener('change', alertMes);
 function alertMes(g) {
     if (g.matches) {
-        document.body.style.backgroundColor = '#ead600', $('#modalMenu').modal('hide');
+        $('#modalMenu').modal('hide');
     }
 }
+
+const xs = window.matchMedia('(min-width: 100px) and (max-width: 479px)');
+xs.addEventListener('change', console.log);
+
+xs.addEventListener('change', alertMex);
+function alertMex(h) {
+    if (h.matches) {
+        $('#modalMenu').modal('hide');
+    }
+}
+
