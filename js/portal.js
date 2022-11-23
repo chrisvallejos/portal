@@ -96,7 +96,7 @@ mql.onchange = function () {
 //}
 
 
-const large = window.matchMedia('(min-width: 992px');
+const large = window.matchMedia('min-width: 992px');
 large.addEventListener(console.log);
 
 large.addEventListener(alertMel);
@@ -116,7 +116,7 @@ function alertMem(f) {
     }
 }
 
-const sm = window.matchMedia('(min-width: 478px)');
+const sm = window.matchMedia('min-width: 478px');
 sm.addEventListener(console.log);
 
 sm.addEventListener(alertMes);
