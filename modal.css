@@ -1,8 +1,10 @@
 /* these styles below are from bootstrap. To reproduce, open bootstrap-vscode on local, and edit custom.scss as needed, and recompile to generate updated css file */
+/*
 .modal {
   --bs-modal-zindex: 1055;
   --bs-modal-width: 100%; /* changed to 100% from 500px */
-  /* --bs-modal-padding: 1rem; */
+/*
+  --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
   --bs-modal-bg: #fff;
@@ -31,18 +33,21 @@
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
-}
+} 
 
 .modal-dialog {
   position: relative;
   width: auto;
-  /* margin: var(--bs-modal-margin); */
+  margin: var(--bs-modal-margin);
   pointer-events: none;
-}
+} */
+/*
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
-  /* transform: translate(0, -50px); */
-}
+  transform: translate(0, -50px);
+} */
+
+/*
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     transition: none;
@@ -52,20 +57,22 @@
   transform: none;
 }
 .modal.modal-static .modal-dialog {
-  /* transform: scale(1.02); */
+  transform: scale(1.02); 
 }
 
 .modal-dialog-scrollable {
- /*  height: calc(100% - var(--bs-modal-margin) * 2); */
+   height: calc(100% - var(--bs-modal-margin) * 2);
 }
+
 .modal-dialog-scrollable .modal-content {
   max-height: 100%;
   overflow: hidden;
 }
+
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
-/*
+
 .modal-dialog-centered {
   display: flex;
   align-items: center;
@@ -85,7 +92,9 @@
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
 }
+
 */
+/*
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
@@ -114,12 +123,13 @@
   border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
   border-top-left-radius: var(--bs-modal-inner-border-radius);
   border-top-right-radius: var(--bs-modal-inner-border-radius);
-}
+} */
+/*
 .modal-header .btn-close {
   padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
   margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
-}
-
+} */
+/*
 .modal-title {
   margin-bottom: 0;
   line-height: var(--bs-modal-title-line-height);
@@ -145,8 +155,8 @@
 }
 .modal-footer > * {
   margin: calc(var(--bs-modal-footer-gap) * 0.5);
-}
-
+} */
+/*
 @media (min-width: 576px) {
   .modal {
     --bs-modal-margin: 1.75rem;
@@ -160,7 +170,7 @@
   .modal-sm {
     --bs-modal-width: 300px;
   }
-}
+} */
 /* @media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
@@ -292,15 +302,17 @@
   }
 }
 */
-
+/*
 .fade {
   transition: opacity 0.15s linear;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .fade {
     transition: none;
   }
 }
+
 .fade:not(.show) {
   opacity: 0;
 }
@@ -314,21 +326,26 @@
   overflow: hidden;
   transition: height 0.35s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
     transition: none;
   }
 }
+
 .collapsing.collapse-horizontal {
   width: 0;
   height: auto;
   transition: width 0.35s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .collapsing.collapse-horizontal {
     transition: none;
   }
-}/*# sourceMappingURL=custom.css.map */
+}
+*/ 
+/*# sourceMappingURL=custom.css.map */
 
 /*
                              \\\\\\\
@@ -354,8 +371,9 @@ These are work in progress stylesss */
 .fade {
   transition: opacity .2s ease-out;
   opacity: .5;
- }
-   /* .modal.fade .modal-dialog {
+}
+
+/* .modal.fade .modal-dialog {
     transition: transform 2s ease-out;
     transform: translate(0,500px);
 } */
@@ -365,22 +383,24 @@ These are work in progress stylesss */
 }
 
 .modal.show .modal-dialog {
-    opacity: 1;
+  opacity: 1;
 }
 
-  .modal.fade {
- transition: opacity .1s ease-out;
+.modal.fade {
+  transition: opacity .1s ease-out;
   opacity: .5;
-  }
-  .modal.show {
-    opacity: 1;
-  }
+}
+
+.modal.show {
+  opacity: 1;
+}
+
 /* .fade:not(.show) {
     opacity: .5;
 } */
 
 .modal-backdrop.fade.show {
- /* display:hidden; */
+  /* display:hidden; */
   z-index: -1000;
 }
 
@@ -389,23 +409,25 @@ These are work in progress stylesss */
 } */
 
 
-.modal-backdrop.fade, .modal-backdrop.show, .modal-backdrop  {
-    transition: .1s;
+.modal-backdrop.fade,
+.modal-backdrop.show,
+.modal-backdrop {
+  transition: .1s;
 }
 
 
-  .modal-backdrop {
-    --bs-backdrop-zindex: -1000;
-    --bs-backdrop-bg: red;
-    --bs-backdrop-opacity: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1000;
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
-    display: block;
+.modal-backdrop {
+  --bs-backdrop-zindex: -1000;
+  --bs-backdrop-bg: red;
+  --bs-backdrop-opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  display: block;
 }
 
 
@@ -421,15 +443,17 @@ These are work in progress stylesss */
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
-} */ /* make sure to update this one */
+} */
+/* make sure to update this one */
 
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     transition: none;
   }
 }
+
 .modal.show .modal-dialog {
-opacity: 1;
+  opacity: 1;
 }
 
 
@@ -465,40 +489,42 @@ opacity: 1;
 /* Mobile break points */
 
 @media screen and (max-width: 991px) {
-.modal-open {
-  overflow: hidden;
-}
-.modal-dialog-scrollable, .modal-body {
-  overflow-y: auto;
-}
+  .modal-open {
+    overflow: hidden;
+  }
 
- .nav__menu-flex {
-   overflow-y: auto;
+  .modal-dialog-scrollable,
+  .modal-body {
+    overflow-y: auto;
+  }
+
+  .nav__menu-flex {
+    overflow-y: auto;
   }
 
   .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1076;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  outline: 0;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1076;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
 
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 0;
-  pointer-events: auto;
-}
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0;
+    pointer-events: auto;
+  }
 
-.modal-dialog-scrollable {
-  height: 98%;
-}
+  .modal-dialog-scrollable {
+    height: 98%;
+  }
 
   .modal-content {
     max-height: 100%;
@@ -508,71 +534,74 @@ opacity: 1;
   .modal-body {
     overflow-y: auto;
   }
-  }
+}
 
 /* desktop break points */
 
 @media screen and (min-width: 992px) {
   .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1076;
-  display: block !important;
-  width: 100%;
-  height: auto;
-  overflow-x: visible;
-  overflow-y: visible;
-  outline: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1076;
+    display: block !important;
+    width: 100%;
+    height: auto;
+    overflow-x: visible;
+    overflow-y: visible;
+    outline: 0;
   }
 }
+
 /* styles added later */
 /*.fade:not(.modal-backdrop) {
    opacity: 1;
    transition: .1s;
    } */
 .modal.fade .modal-dialog {
- transition: opacity .1s ease-out;
+  transition: opacity .1s ease-out;
   opacity: 1;
 }
-  .modal {
-    height:100%;
-    opacity: 1;
-    transition: .1s all ease-in ;
-  }
+
+.modal {
+  height: 100%;
+  opacity: 1;
+  transition: .1s all ease-in;
+}
 
 
 .modal.fade.show {
-    height: 100%;
-    opacity: 1;
-    transition: all .15s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-  .modal-backdrop {
-    opacity: 0;
-	width: 0px;
-    transition: all 0s ease-in;
-    background-color: rgb(0 0 255 / 0%);
+  height: 100%;
+  opacity: 1;
+  transition: all .15s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-  .modal-backdrop.fade.show {
-   opacity: 0;
-   transition: all 0s ease-in;
-   }
+.modal-backdrop {
+  opacity: 0;
+  width: 0px;
+  transition: all 0s ease-in;
+  background-color: rgb(0 0 255 / 0%);
+}
+
+.modal-backdrop.fade.show {
+  opacity: 0;
+  transition: all 0s ease-in;
+}
 
 
 .fade:not(.modal-backdrop) {
-    opacity: 1;
-    height: 0%;
-    transition: all .18s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 1;
+  height: 0%;
+  transition: all .18s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-    div.modal-backdrop.fade {
-    transition: all .05s ease-in 0 !important;
-   }
+div.modal-backdrop.fade {
+  transition: all .05s ease-in 0 !important;
+}
 
-    .fade {
-    transition: all .2s;
-   }
+.fade {
+  transition: all .2s;
+}
 
 
 
