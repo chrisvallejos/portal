@@ -1,8 +1,8 @@
 /* these styles below are from bootstrap. To reproduce, open bootstrap-vscode on local, and edit custom.scss as needed, and recompile to generate updated css file */
 .modal {
   --bs-modal-zindex: 1055;
-  --bs-modal-width: 500px;
-  --bs-modal-padding: 1rem;
+  --bs-modal-width: 100%; /* changed to 100% from 500px */
+  /* --bs-modal-padding: 1rem; */
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
   --bs-modal-bg: #fff;
@@ -36,12 +36,12 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: var(--bs-modal-margin);
+  /* margin: var(--bs-modal-margin); */
   pointer-events: none;
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
-  transform: translate(0, -50px);
+  /* transform: translate(0, -50px); */
 }
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
@@ -52,11 +52,11 @@
   transform: none;
 }
 .modal.modal-static .modal-dialog {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
 }
 
 .modal-dialog-scrollable {
-  height: calc(100% - var(--bs-modal-margin) * 2);
+ /*  height: calc(100% - var(--bs-modal-margin) * 2); */
 }
 .modal-dialog-scrollable .modal-content {
   max-height: 100%;
@@ -65,7 +65,7 @@
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
-
+/*
 .modal-dialog-centered {
   display: flex;
   align-items: center;
@@ -85,7 +85,7 @@
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
 }
-
+*/
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
@@ -161,7 +161,7 @@
     --bs-modal-width: 300px;
   }
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
     --bs-modal-width: 800px;
@@ -291,6 +291,8 @@
     overflow-y: auto;
   }
 }
+*/
+
 .fade {
   transition: opacity 0.15s linear;
 }
