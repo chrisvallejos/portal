@@ -2,8 +2,8 @@
 let mqs = window.matchMedia('(max-width: 991px)');
 document.querySelector(".mq-value").innerText = mqs.matches; */
 
-// Defining event listener function
-function displayWindowSize() {
+// Defining event listener function 
+/* function displayWindowSize() {
     // Get width and height of the window excluding scrollbars
     var w = document.documentElement.clientWidth;
     var h = document.documentElement.clientHeight;
@@ -17,7 +17,7 @@ window.addEventListener("resize", displayWindowSize);
 
 // Calling the function for the first time
 displayWindowSize();
-
+*/
 
 // collapse modal window one
 /* var para = document.querySelector('p.sam');
