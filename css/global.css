@@ -1,0 +1,353 @@
+<style>img {
+  vertical-align: inherit;
+}
+
+/*Reset buttons, and links styles*/
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+
+/* Links & Buttons */
+
+@media screen and (min-width: 992px) {
+
+  .masthead__nav-links::after,
+  .footer__nav-link::after,
+  .nav__link::after {
+    content: " ";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    -webkit-transition: -webkit-transform .25s cubic-bezier(0, .5, .5, 1);
+    transition: -webkit-transform .25s cubic-bezier(0, .5, .5, 1);
+    -o-transition: -o-transform .25s cubic-bezier(0, .5, .5, 1);
+    transition: transform .25s cubic-bezier(0, .5, .5, 1);
+    transition: transform .25s cubic-bezier(0, .5, .5, 1),
+      -webkit-transform .25s cubic-bezier(0, .5, .5, 1),
+      -o-transform .25s cubic-bezier(0, .5, .5, 1);
+    -webkit-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+
+  .masthead__nav-links:hover::after,
+  .footer__nav-link:hover::after,
+  .nav__link:hover::after {
+    -webkit-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+}
+
+.masthead__nav-links,
+.nav__link {
+  font-weight: 540;
+}
+
+.masthead__nav-links::after,
+.nav__link::after {
+  background: #294af0;
+}
+
+.footer__nav-link::after {
+  background: #666;
+}
+
+.button-baby-blue {
+  font-weight: 330;
+}
+
+.button-secondary.round {
+  font-weight: 340;
+}
+
+.button-link {
+  font-weight: 340;
+}
+
+@media screen and (max-width: 991px) {
+  .masthead__nav-links.last {
+    margin-bottom: 30vh;
+  }
+
+  .masthead__nav-links:hover {
+    color: #294af0;
+  }
+
+  .menu-button {
+    touch-action: manipulation;
+  }
+}
+
+span.btn-icon {
+  position: relative;
+  top: 6px;
+  left: 3px;
+  line-height: 0;
+}
+
+span.btn-link-icon {
+  position: relative;
+  top: 6px;
+  left: 0px;
+  line-height: 0;
+}
+
+/* ==========================================================================
+Typography definitions
+========================================================================== */
+
+
+
+/* Typography Styles */
+.bold {
+  font-weight: bold !important;
+}
+body {
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 767px) {
+  body {
+    font-weight: 400;
+  }
+
+  .rich p {
+    font-weight: 382;
+  }
+
+  .rich.story p {
+    font-weight: 382;
+  }
+
+  .p--lead {
+    font-weight: 570;
+  }
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.p--medium {
+  font-weight: 350;
+}
+
+.p--deck {
+  font-weight: 320;
+}
+
+.p--m-light {
+  font-weight: 360;
+}
+
+.material-symbols-outlined {
+  font-weight: 300;
+}
+
+.default-roboto {
+  margin-bottom: 3.6rem;
+  font-family: 'Robotoflex', sans-serif;
+  font-variation-settings: 'opsz'14, 'wdth'100, 'wght'400, 'GRAD'0, 'XTRA'468, 'YOPQ'79, 'YTAS'750, 'YTDE'-203, 'YTFI'738, 'YTLC'514, 'YTUC'712;
+  font-size: 5.05rem;
+  line-height: 3rem;
+}
+
+.defaultp {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+
+.p--deck-header {
+  font-weight: 340;
+}
+
+.rich--deck-header p {
+  font-weight: 340;
+}
+
+.material-symbols-outlined.icon--400 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.p--lead {
+  font-weight: 650;
+}
+
+.rich.story p {
+  font-weight: 420;
+}
+
+@media (max-width: 479px) {
+  .w-richtext figure {
+    width: 100%;
+  }
+
+  .w-richtext figure.w-richtext-figure-type-image {
+    max-width: 100%;
+    min-height: 7rem;
+  }
+}
+
+/* End Typography */
+
+/*
+* === END TYPOGRAPHY ===
+*/
+
+
+
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+  margin-top: 0;
+}
+
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+/********** Nav Styles ******/
+.nav__menu-flex {
+  overflow-y: inherit;
+}
+/* Nav Styles End */
+
+
+.f15 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(30%, (1080px - 100vw)*1000, 100%), 1fr));
+  grid-gap: 2rem;
+}
+
+.grad1 {
+  -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)))
+}
+
+.text-color-gauss-pink {
+  color: #ff499b !important;
+}
+
+
+/* Imported Styles */
+
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+  pointer-events: none;
+}
+
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on {
+  pointer-events: auto;
+}
+
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/*Hide focus outline for main content element*/
+main:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* Make sure containers never lose their center alignment*/
+.container-medium,
+.container-small,
+.container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/*Apply "..." after 2 lines of text */
+.text-style-2lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Removes native scrollbar */
+/* Added by chris from relume*/
+.no-scrollbar {
+  -ms-overflow-style: none; // IE 10+
+  overflow: -moz-scrollbars-none; // Firefox
+}
+
+/* Added by chris from relume*/
+.no-scrollbar::-webkit-scrollbar {
+  display: none; // Safari and Chrome
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px),
+@media screen and (max-width: 767px),
+@media screen and (max-width: 479px) {
+
+  .hide,
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile-landscape {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+</style>
