@@ -545,8 +545,8 @@ These are work in progress stylesss */
     left: 0;
     z-index: 1076;
     display: block !important;
-    width: 100%;
-    height: max-content;
+    width: max-content;
+    height: auto;
     overflow-x: visible;
     overflow-y: visible;
     outline: 0;
